@@ -25,7 +25,7 @@ body{
 
 .play-area{
     display: flex;
-    margin: 50px auto 30px;
+    margin: 10px auto 10px;
     width: 1500px;
     height: 750px;
     background-image: url(../img/grass.jpg);

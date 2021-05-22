@@ -15,8 +15,8 @@ let scoreT2 = 0
 function controller (e){
     if (e.keyCode == 65) {
 
-    left = left - 5   
-    right = right + 5
+    left = left - 10   
+    right = right + 10
 
     $('#ball').css('left', left + 'px');
     $('#ball').css('right', right + 'px');
@@ -104,11 +104,11 @@ function refresh()
 	time=(min<=9 ? "0"+min : min) + ":" + sec;
       $('#timer').text(time)
 	inter=setTimeout("refresh()", 1000);
-	// действие, если таймер 00:00
+	
 	if(min=='00' && sec=='00'){
 		sec="00";
 		clearInterval(inter);
-		/* выводим сообщение в элемент с id="tut", например <div id="tut"></div> */
+		
                 alert('Game Over!');
 	}
 }
